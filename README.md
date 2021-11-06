@@ -23,3 +23,7 @@ heroku apps
 heroku buildpacks:clear
 heroku buildpacks:add https://github.com/moneymeets/python-poetry-buildpack.git
 heroku buildpacks:add heroku/python
+
+
+heroku git:remote -a myapp
+git push heroku main
