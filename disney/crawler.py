@@ -31,7 +31,6 @@ class Crawler():
 
   
   def get_parks_waittime(self):
-    os.makedirs('../data/')
 
     for park in self.parks:
       print(park)
@@ -74,4 +73,4 @@ class Crawler():
     return self
 
   def delete_local_files(self):    
-    shutil.rmtree('../data/')
+    os.remove(self.upload_file)
